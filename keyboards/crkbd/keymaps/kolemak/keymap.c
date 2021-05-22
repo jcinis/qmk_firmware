@@ -155,10 +155,10 @@ void matrix_update(struct CharacterMatrix *dest, const struct CharacterMatrix *s
   }
 }
 
-void iota_gfx_flush(void) {
-  if (rgb_matrix_config.enable)
-    matrix_render_bitmap32(game_of_life_grid.data, GameOfLifeHeight);
-}
+//void iota_gfx_flush(void) {
+//  if (rgb_matrix_config.enable)
+    //matrix_render_bitmap32(game_of_life_grid.data, GameOfLifeHeight);
+//}
 
 #endif//SSD1306OLED
 
