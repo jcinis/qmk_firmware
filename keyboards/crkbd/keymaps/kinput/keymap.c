@@ -46,19 +46,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT,  LOWER,  KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
+                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
   [_LOWER] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                      KC_PGUP,   KC_UP, KC_LEFT, KC_HOME, XXXXXXX,  KC_DEL,\
+       KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                      KC_PGUP, KC_HOME,   KC_UP,  KC_END, XXXXXXX,  KC_DEL,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                      KC_PGDN, KC_DOWN,KC_RIGHT,  KC_END, XXXXXXX, XXXXXXX,\
+      KC_LSFT,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                      KC_PGDN, KC_LEFT, KC_DOWN, C_RIGHT, XXXXXXX, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_LCTL, KC_F11,   KC_F12, KC_PSCR, KC_VOLD, KC_VOLU,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT,  LOWER,  KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
+                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_LCBR, KC_RCBR, KC_TILD, KC_MINS, KC_UNDS,                      KC_LBRC, KC_RBRC,  KC_EQL, KC_PIPE, KC_BSLS,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT,  LOWER,  KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
+                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,XXXXXXX,LGUI(KC_7),LGUI(KC_8),LGUI(KC_9),XXXXXXX,                    KC_P0,   KC_P1,   KC_P2,   KC_P3, KC_PSLS,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT,  LOWER,  KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
+                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      KC_LCTL, RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT,  LOWER,  KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
+                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   )
 };
