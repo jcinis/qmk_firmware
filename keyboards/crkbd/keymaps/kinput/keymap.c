@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
+                                          KC_LALT,   LOWER, KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_LCTL, KC_F11,   KC_F12, KC_PSCR, KC_VOLD, KC_VOLU,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
+                                          KC_LALT,   LOWER, KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_LCBR, KC_RCBR, KC_TILD, KC_MINS, KC_UNDS,                      KC_LBRC, KC_RBRC,  KC_EQL, KC_PIPE, KC_BSLS,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
+                                          KC_LALT,   LOWER, KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,XXXXXXX,LGUI(KC_7),LGUI(KC_8),LGUI(KC_9),XXXXXXX,                    KC_P0,   KC_P1,   KC_P2,   KC_P3, KC_PSLS,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
+                                          KC_LALT,   LOWER, KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      KC_LCTL, RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  NUMPAD,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI,   LOWER,      RAISE,  KC_SPC,  KC_ENT
+                                          KC_LALT,   LOWER, KC_LGUI,     KC_SPC,   RAISE,  KC_ENT
                                       //`--------------------------'  `--------------------------'
   )
 };
@@ -158,6 +158,7 @@ void matrix_update(struct CharacterMatrix *dest, const struct CharacterMatrix *s
 //void iota_gfx_flush(void) {
 //  if (rgb_matrix_config.enable)
     //matrix_render_bitmap32(game_of_life_grid.data, GameOfLifeHeight);
+//    matrix_render(game_of_life_grid);
 //}
 
 #endif//SSD1306OLED
